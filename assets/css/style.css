@@ -73,6 +73,14 @@ a {
 
 
 /** SEARCH BAR **/ 
+
+#uppernavitems img{
+    display: block;
+    position: absolute;
+    top:16.5px;
+    left:100px;
+    z-index: 300;
+}
 input[type=text] {
     width: 280px;
     height:30px;
@@ -88,6 +96,7 @@ input[type=text] {
     font-family: FuturaStd-Light;
     font-size: 12px;
     color:red;
+    float: left;
 }
 
 input[type=text]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -183,20 +192,25 @@ NOT ESSENTIAL
 
 
 /** BURGERMENU **/
+#burger{
+    position: relative;
+}
 #burgermenu{
     height:85px;
-    width:560px;
+    width:1280px;
     position: absolute;
     right:-700px;
     transition:all ease 1s;
     opacity: 0;
+    background-color: white;
+    border-bottom: 2px solid red;
 }
 #burgermenu>nav>ul {
     list-style: none;
     height: 85px;
     width: 560px;
     float: right;
-    margin-right: 50px;
+    margin-right: 125px;
 }
 
 #burgermenu>nav>ul>li {
@@ -223,4 +237,5 @@ NOT ESSENTIAL
     color: red;
     transition: all ease 0.5s;
 }
+
 
