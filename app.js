@@ -1,6 +1,4 @@
-var express = require('express');
-var app = express();
-var http = require('http').Server(app);
+var express = require('express'), app = express(), http = require('http').Server(app);
 
 app.use('/js', express.static('assets/js'));
 app.use('/css', express.static('assets/css'));

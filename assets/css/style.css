@@ -1,8 +1,46 @@
-* {
-    margin: 0;
-    padding: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 /**FONTS**/
 
@@ -44,6 +82,7 @@ a {
 #uppernavitems {
     width: 1280px;
     height: 85px;
+    position: relative;
 }
 
 #burger {
@@ -54,6 +93,7 @@ a {
     cursor: pointer;
     z-index: 300;
     transition: all ease 1s;
+    background-color:white;
 }
 
 /**
@@ -99,11 +139,18 @@ NOT ESSENTIAL
 
 
 /** BURGERMENU **/
-
+#burgermenu{
+    height:85px;
+    width:560px;
+    position: absolute;
+    right:-700px;
+    transition:all ease 1s;
+    opacity: 0;
+}
 #burgermenu>nav>ul {
     list-style: none;
     height: 85px;
-    width: 510px;
+    width: 560px;
     float: right;
     margin-right: 50px;
 }
@@ -114,14 +161,6 @@ NOT ESSENTIAL
     height: 85px;
     width: 90px;
     margin-right: 50px;
-}
-
-#burgermenu>nav>ul>li:last-child {
-    display: block;
-    float: left;
-    height: 85px;
-    width: 90px;
-    margin-right: 0px;
 }
 
 #burgermenu>nav>ul>li>a {
