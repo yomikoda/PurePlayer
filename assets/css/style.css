@@ -71,7 +71,22 @@ a {
     color: black;
 }
 
+/** SEARCH BAR **/ 
+input[type=text] {
+    width: 325px;
+    height:30px;
+    border:1px solid red;
+    transition:all ease 1s;
+    border-radius: 30px;
+}
 
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 625px;
+    transition:all ease 1s;
+    border:1px solid red;
+    
+}
 /** BURGER **/
 
 #uppernav {
@@ -179,3 +194,4 @@ NOT ESSENTIAL
     color: red;
     transition: all ease 0.5s;
 }
+
