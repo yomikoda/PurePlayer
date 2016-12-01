@@ -9,10 +9,33 @@ $(function(){
         }else{
            $('#burgermenu').css({'right':'-700px','transition':'all ease 1s','opacity':'0'}); 
         }
-        
+        if( $('#btnplaylist').hasClass('clicked') && $('#burger').hasClass('rotated')){ 
+            $('#burger').css({'background-color':'white','transition':'all ease 1s'});
+            $('.line').css({'background-color':'#FF6B6E','transition':'all ease 1s'});
+        }
+        else{
+            $('#burger').css({'background-color':'#FF6B6E','transition':'all ease 1s'});
+            $('.line').css({'background-color':'white','transition':'all ease 1s'});
+        }
+    });
+     
+    $('#btnplaylist').on('click', function(){
+         $('#btnplaylist').toggleClass('clicked');
+        if($('#btnplaylist').hasClass('clicked')){
+            $('#playlist').css({'right':'0px','transition':'all ease 1s','opacity':'1'});    
+            $('#burger').css({'background-color':'#FF6B6E','transition':'all ease 1s'}); 
+            $('.line').css({'background-color':'white','transition':'all ease 1s'});
+            $('#btnplaylisticon').css({'border-right':'0px','transition':'all ease 1s','border-left':'20px solid #FF6B6E'}); 
+        }
+       else{
+           $('#playlist').css({'right':'-400px','transition':'all ease 1s','opacity':'1'});
+            $('#burger').css({'background-color':'white','transition':'all ease 1s'}); 
+            $('.line').css({'background-color':'#FF6B6E','transition':'all ease 1s'});
+            $('#btnplaylisticon').css({'border-left':'0px','transition':'all ease 1s','border-right':'20px solid #FF6B6E'}); 
+        }
+        // ADD A FUNCTION CHECKCOLOR -> A functions that I can just callback when needed
     });
     
-
-    
+  
     
 });
