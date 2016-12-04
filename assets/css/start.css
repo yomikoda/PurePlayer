@@ -1,0 +1,71 @@
+main{
+    position: relative;
+    background-color:white;
+}
+#uppernavitems img,#uppernavitems [type=text]{
+    opacity: 0;
+}
+
+
+#biglogo{
+    display:block;
+    position: absolute;
+    top:-50%;
+    left:50%;
+    height:143px;
+    width:482px;
+    margin-left:-241px;
+    margin-top:-71.5px;
+    opacity:0;
+    transition: all ease 3s;
+    transition-delay: 3s;
+}
+
+
+/** SEARCH BAR **/
+#bigsearchbar{
+    width: 654px;
+    height: 30px;
+    border: 1px solid #FF6B6E;
+    transition: all ease 1s;
+    border-radius: 30px;
+    background-image: url('../img/magnifyinglass.png');
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    padding-left: 45px;
+    font-family: FuturaStd-Light;
+    font-size: 12px;
+    color: #FF6B6E;
+    float: left;
+}
+
+#bigsearchbar::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #FF6B6E;
+}
+
+#bigsearchbar::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #FF6B6E;
+}
+
+#bigsearchbar:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #FF6B6E;
+}
+
+#bigsearchbar:-moz-placeholder {
+    /* Firefox 18- */
+    color: #FF6B6E;
+}
+
+#bigsearchbar:focus {
+    width: 625px;
+    transition: all ease 1s;
+    border: 1px solid #FF6B6E;
+    outline: none !important;
+    border: 1px solid #FF6B6E;
+    box-shadow: 0 0 2px #FF6B6E;
+    margin-left: 355px;
+    font-size: 15px;
+}
