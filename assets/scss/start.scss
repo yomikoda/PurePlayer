@@ -66,7 +66,7 @@ main {
     position: absolute;
     left: 50%;
     margin-left: -344px;
-    top: 72%;
+    top: 65%;
     margin-top: -137.5px;
     font-family: $main-font;
     #pitch {
@@ -101,6 +101,7 @@ main {
         position: relative;
         opacity:0;
         transition:all ease 1s;
+        cursor:pointer;
         h3{
             font-size: 24px;
             position: absolute;
@@ -108,6 +109,22 @@ main {
             text-align: center;
             bottom:0;
             opacity: 0;
+        }    
+    }
+    .section:hover{
+        background-color:$main-color;
+        h3{
+            color:$main-color;
+            letter-spacing: 5px;
+            
         }
+    }
+    #pitch+.section{
+        background-image: url(../img/artists.svg);
+        background-size: cover;
+    }
+    #pitch+.section:hover{
+        background-image: url(../img/artists_negative.svg);
+        background-size: cover;
     }
 }
