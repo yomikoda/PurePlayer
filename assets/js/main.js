@@ -3,7 +3,7 @@ $(function(){
     /** BURGER CLICK Handling - Nav/logo/burger changes **/
     $('#burger').on('click', function(){
         $('#burger').toggleClass('rotated');
-            
+        //ERASE CONSOLE LOGS   
         if($('#burger').hasClass('rotated')){
             $('#burgermenu').css({'right':'0px','transition':'all ease 1s','opacity':'1'});
         }else{
@@ -21,12 +21,11 @@ $(function(){
                 console.log("MEH");
                 
             }
-
             else if($('#burger').hasClass('rotated')){
                 $('#burger').css({'background-color':'white','transition':'all ease 1s'});
                 $('.line').css({'background-color':'#FF6B6E','transition':'all ease 1s'});
                 console.log("NOPE");
-            }     
+            } 
     });
      
     $('#btnplaylist').on('click', function(){

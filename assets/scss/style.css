@@ -234,35 +234,31 @@ a {
   background-color: white;
   border-bottom: 2px solid #FF6B6E;
   z-index: 250; }
-
-#burgermenu > nav > ul {
-  list-style: none;
-  height: 85px;
-  width: 560px;
-  float: right;
-  margin-right: 125px; }
-
-#burgermenu > nav > ul > li {
-  display: block;
-  float: left;
-  height: 85px;
-  width: 90px;
-  margin-right: 50px; }
-
-#burgermenu > nav > ul > li > a {
-  height: 85px;
-  line-height: 85px;
-  width: 90px;
-  font-family: FuturaStd-Light;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-align: center;
-  color: black;
-  transition: all ease 0.5s; }
-
-#burgermenu > nav > ul > li > a:hover {
-  color: #FF6B6E;
-  transition: all ease 0.5s; }
+  #burgermenu ul {
+    list-style: none;
+    height: 85px;
+    width: 560px;
+    float: right;
+    margin-right: 125px; }
+    #burgermenu ul li {
+      display: block;
+      float: left;
+      height: 85px;
+      width: 90px;
+      margin-right: 50px; }
+      #burgermenu ul li a {
+        height: 85px;
+        line-height: 85px;
+        width: 90px;
+        font-family: FuturaStd-Light;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-align: center;
+        color: black;
+        transition: all ease 0.5s; }
+      #burgermenu ul li a:hover {
+        color: #FF6B6E;
+        transition: all ease 0.5s; }
 
 /**PLAYLIST SIDE BAR **/
 #playlist {
