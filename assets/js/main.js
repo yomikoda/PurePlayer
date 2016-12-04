@@ -12,15 +12,21 @@ $(function(){
             if( $('#btnplaylist').hasClass('clicked') && $('#burger').hasClass('rotated')){ 
                 $('#burger').css({'background-color':'white','transition':'all ease 1s'});
                 $('.line').css({'background-color':'#FF6B6E','transition':'all ease 1s'});
+                console.log("YUP");
             }
-            else if(('#burger').hasClass('rotated')){
+           
+            else if( $('#btnplaylist').hasClass('clicked') && $("#burger:not(.rotated)")){ 
+                $('#burger').css({'background-color':'#FF6B6E','transition':'all ease 1s'});
+                $('.line').css({'background-color':'white','transition':'all ease 1s'});
+                console.log("MEH");
+                
+            }
+
+            else if($('#burger').hasClass('rotated')){
                 $('#burger').css({'background-color':'white','transition':'all ease 1s'});
                 $('.line').css({'background-color':'#FF6B6E','transition':'all ease 1s'});
-            }
-            else{
-                 $('#burger').css({'background-color':'white','transition':'all ease 1s'});
-                $('.line').css({'background-color':'#FF6B6E','transition':'all ease 1s'});
-            }        
+                console.log("NOPE");
+            }     
     });
      
     $('#btnplaylist').on('click', function(){
@@ -40,6 +46,6 @@ $(function(){
         // ADD A FUNCTION CHECKCOLOR -> A functions that I can just callback when needed
     });
     
-  
+     //$("#burger:not(.rotated)").
     
 });
