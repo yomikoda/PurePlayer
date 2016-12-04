@@ -139,7 +139,8 @@ table {
 main {
   width: 1280px;
   height: 690px;
-  background-color: white; }
+  background-color: white;
+  position: relative; }
 
 #page {
   width: 1280px;
@@ -269,6 +270,7 @@ a {
   width: 400px;
   background-color: #FF6B6E;
   position: absolute;
+  z-index: 200;
   right: -400px;
   top: 0;
   opacity: 1;
