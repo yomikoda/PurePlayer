@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <title>PurePlayer</title>
     <meta name="description" content="PurePlayer - A Pure way to listen to music everywhere">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/start.css">
-    
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
 
 </head>
 
 <body>
-   
-        <div id="playlist">
+   <div id="playlist">
             <div id="btnplaylist">
                 <div id="btnplaylisticon"></div>
             </div>
@@ -34,13 +31,12 @@
                     </ul>
                 </div>
             </div>
-        </div>
+    </div>
     <div id="page" class="center">
         <div id="uppernav">
             <div id="uppernavitems" class="center">
-                <img id="logo_nav" src="../assets/img/logo.svg" alt="">
+                <img src="../assets/img/logo.svg" alt="">
                 <input type="text" name="search" placeholder="Search..">
-                <h2></h2>
                 <div id="burger">
                     <div class="line"></div>
                     <div class="line"></div>
@@ -49,44 +45,27 @@
                 <div id="burgermenu">
                     <nav>
                         <ul>
-                            <li><a href="javascript:void(0)" class="artists">ARTISTS</a></li>
-                            <li><a href="javascript:void(0)" class="themes">THEMES</a></li>
-                            <li><a href="javascript:void(0)" class="genre">GENRE</a></li>
-                            <li><a href="javascript:void(0)" class="playlists">PLAYLISTS</a></li>
+                            <li><a href="javascript:void(0)">ARTISTS</a></li>
+                            <li><a href="javascript:void(0)">THEMES</a></li>
+                            <li><a href="">GENRE</a></li>
+                            <li><a href="">PLAYLISTS</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
+        
         <main class="center">
-            <img id="biglogo" src="../assets/img/logo.svg" alt="">
-            <!--<input type="text" id="bigsearchbar" name="search" placeholder="Search..">-->
-            <div id="choices" class="center">
-                <div id="pitch">
-                    <p>What do you want to listen to ?</p>
-                    <h2>Playlists by</h3>
-                </div>
-                <div class="section artists" id="PLOP" >
-                    <h3>Artists</h3>
-                </div>
-                <div class="section themes">
-                    <h3>Themes</h3>
-                </div>
-                <div class="section genre">
-                    <h3>Genre</h3>
-                </div>
-                <div class="section playlists">
-                    <h3>Popular</h3>
-                </div>
-            </div>
-
+        <div id="content"></div>   
+        
         </main> 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script src="../assets/js/jquery-2.1.4.min.js"></script>
         <script src="../assets/js/main.js"></script>
-        <script src="../assets/js/start.js"></script> 
         <script src="../assets/js/load.js"></script>
-    </div>
+        <script src="../assets/js/start.js"></script>
 </body>
 
 </html>

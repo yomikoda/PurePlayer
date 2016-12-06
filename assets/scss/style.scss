@@ -14,7 +14,8 @@
 /** VARS **/
 
 $main-color: #FF6B6E;
-$main-font : FuturaStd-Light;
+$main-font: FuturaStd-Light;
+
 /** BASIC **/
 
 .center {
@@ -44,15 +45,16 @@ a {
 /** SEARCH BAR **/
 
 #uppernavitems {
-    img {
+    #logo_nav {
         display: block;
         position: absolute;
         top: 50%;
-        margin-top:-20px;
+        margin-top: -20px;
         left: 100px;
         z-index: 300;
-        height:51px;
-        width:175px;
+        height: 51px;
+        width: 175px;
+        cursor: pointer;
     }
     input[type=text] {
         width: 280px;
@@ -184,7 +186,7 @@ a {
     width: 400px;
     background-color: #FF6B6E;
     position: absolute;
-    z-index: 300;
+    z-index: 400;
     right: -400px;
     top: 0;
     opacity: 1;
@@ -294,7 +296,6 @@ a {
                         border: 2px solid #FF6B6E;
                         float: left;
                     }
-
                     .trackname {
                         width: 250px;
                         height: 46px;
@@ -302,14 +303,15 @@ a {
                         margin-left: 9px;
                         box-sizing: border-box;
                         border: 2px solid #FF6B6E;
-                        p,p+p{
+                        p,
+                        p+p {
                             width: 94%;
                             height: 45%;
                             margin-top: 1%;
                             font-family: FuturaStd-light;
                             font-size: 14px;
                             text-align: left;
-                            margin-left: 3%   
+                            margin-left: 3%
                         }
                     }
                 }
@@ -318,5 +320,73 @@ a {
     }
 }
 
+
 /** END PLAYLIST **/
-body{overflow-x:hidden;}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/** ARTISTS PAGE **/
+
+main {
+    .artist {
+        width: 20%;
+        height: 50%;
+        float: left;
+        position: relative;
+        cursor: pointer;
+        display: visible;
+        background-color: purple;
+        transition:all ease 1s;
+        h3 {
+            font-family: $main-font;
+            font-size: 18px;
+            letter-spacing: 5px;
+            text-align: center;
+            margin-top: 10px;
+            position: absolute;
+            bottom: 30px;
+            transition: all ease 1s;
+        }
+        #biggie {
+            position: absolute;
+            margin-top: 5%;
+            height: 80%;
+            width: 100%;
+            background-image: url(../img/biggie.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all ease 1s;
+        }
+        .artist_discography{
+            float:right;
+            width:70%;
+            height:100%;
+        }
+    }
+    .artist:hover {
+        h3 {
+            color: $main-color;
+            transition: all ease 1s;
+        }
+        #biggie {
+            background-image: url(../img/biggie_neg.svg);
+            transition: all ease 1s;
+        }
+    }
+    .artist-clicked{
+        background-color:red;
+        height:100%;
+        width:100%;
+        transition:all ease 1s;
+    }
+    .artist-not-clicked{
+        height:1px;
+        width:1px;
+        background-color:blue;
+        transition:all ease 1s;
+    }
+}

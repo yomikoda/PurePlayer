@@ -1,7 +1,9 @@
 $(function(){
    
     /** BURGER CLICK Handling - Nav/logo/burger changes **/
-    $('#burger').on('click', function(){
+    
+    
+    $('#burger').click(function(){
         $('#burger').toggleClass('rotated');
         //ERASE CONSOLE LOGS   
         if($('#burger').hasClass('rotated')){
@@ -12,7 +14,7 @@ $(function(){
             
     });
      
-    $('#btnplaylist').on('click', function(){
+    $('#btnplaylist').click(function(){
          $('#btnplaylist').toggleClass('clicked');
         if($('#btnplaylist').hasClass('clicked')){
             $('#playlist').css({'right':'0px','transition':'all ease 1s','opacity':'1'});    
@@ -24,9 +26,47 @@ $(function(){
             
             $('#btnplaylisticon').css({'border-left':'0px','transition':'all ease 1s','border-right':'20px solid #FF6B6E'}); 
         }
-        // ADD A FUNCTION CHECKCOLOR -> A functions that I can just callback when needed
+        
     });
     
      //$("#burger:not(.rotated)").
     
+    
+    /** ARTISTS PAGE **/
+    
+ 
 });
+
+
+
+
+var init = {
+    artist : function(){
+        $('.artist').click(function(){
+            $(this).toggleClass('artist-clicked');
+            
+            if($(this).hasClass("artist-clicked")){
+                $('#biggie').css({'left':'0px','transition':'all ease 1s','width':'30%'}); 
+            }
+            else if($('.artist').not( ".artist-clicked" )){
+                $('.artist').addClass('artist-not-clicked');
+                console.log("PLIIIIIZE");
+            }
+            else{
+                $('.artist').removeClass('artist-clicked');
+            }
+                
+
+        });
+        
+        $('link[rel=stylesheet]+link[rel=stylesheet]').remove();
+        $('main').fadeIn(600);
+    },
+    
+    themes : function(){
+        
+    }
+    
+}
+
+
