@@ -386,5 +386,7 @@ a {
               margin-left: 3%; }
 
 /** END PLAYLIST **/
+body {
+  overflow-x: hidden; }
 
 /*# sourceMappingURL=style.css.map */

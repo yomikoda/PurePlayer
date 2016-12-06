@@ -386,6 +386,9 @@ a {
               margin-left: 3%; }
 
 /** END PLAYLIST **/
+body {
+  overflow-x: hidden; }
+
 main {
   position: relative;
   background-color: white; }
