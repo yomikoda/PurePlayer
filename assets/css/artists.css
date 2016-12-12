@@ -496,9 +496,28 @@ main {
     #choices .section:hover h3 {
       color: #FF6B6E;
       letter-spacing: 5px; }
-  #choices #pitch + .section {
+  #choices #artistbg, #choices #themesbg, #choices #genrebg, #choices #playlist {
+    transition: all ease 1s; }
+  #choices #artistbg:hover, #choices #themesbg:hover, #choices #genrebg:hover, #choices #playlist:hover {
+    transition: all ease 1s; }
+  #choices #artistsbg {
     background-image: url(../img/artists.svg);
     background-size: cover; }
+  #choices #themesbg {
+    background-image: url(../img/themes.svg);
+    background-size: cover; }
+  #choices #themesbg:hover {
+    background-image: url(../img/themes_neg.svg); }
+  #choices #genrebg {
+    background-image: url(../img/genre.svg);
+    background-size: cover; }
+  #choices #genrebg:hover {
+    background-image: url(../img/genre_neg.svg); }
+  #choices #playlistsbg {
+    background-image: url(../img/popular.svg);
+    background-size: cover; }
+  #choices #playlistsbg:hover {
+    background-image: url(../img/popular_neg.svg); }
 
 /** ARTISTS PAGE **/
 main .artist {

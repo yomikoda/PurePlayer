@@ -450,9 +450,36 @@ main {
             letter-spacing: 5px;
         }
     }
-    #pitch+.section {
+    #artistbg,#themesbg,#genrebg,#playlist{
+        transition: all ease 1s;
+    }
+    #artistbg:hover,#themesbg:hover,#genrebg:hover,#playlist:hover{
+        transition: all ease 1s;
+    }
+    #artistsbg {
         background-image: url(../img/artists.svg);
         background-size: cover;
+    }
+    #themesbg {
+        background-image: url(../img/themes.svg);
+        background-size: cover;
+    }
+    #themesbg:hover {
+        background-image: url(../img/themes_neg.svg);
+    }
+    #genrebg {
+        background-image: url(../img/genre.svg);
+        background-size: cover;
+    }
+    #genrebg:hover{
+        background-image: url(../img/genre_neg.svg);
+    }
+    #playlistsbg {
+        background-image: url(../img/popular.svg);
+        background-size: cover;
+    }
+    #playlistsbg:hover {
+        background-image: url(../img/popular_neg.svg);
     }
 }
 
