@@ -1,5 +1,5 @@
 $(function(){
-   
+    
     /** BURGER CLICK Handling - Nav/logo/burger changes **/
     
     
@@ -41,6 +41,23 @@ $(function(){
 
 
 var init = {
+    index : function(){
+        $('#biglogo').css({'top':'30%','transition':'all ease 1s','opacity':'1'});
+        $('#pitch p').css({'left':'0','transition':'all ease 1s','opacity':'1'});
+     
+        $('#pitch h2').animate({'left':'0'},500,'linear',function(){
+                $('.section').each(function(i){
+                    setTimeout(function(){
+                    $('.section').eq(i).css('opacity','1');
+                    $('.section h3').eq(i).css({'bottom':'-60px','transition':'all ease 1s','opacity':'1'});
+                    },300 * (i+1));
+                });     
+        });
+        $('#uppernavitems img,#uppernavitems [type=text]').css({'opacity':'1','transition':'all ease 1s'}); 
+        $('main').fadeIn(600);
+        
+    },
+    
     artist : function(){
         $('.artist').click(function(){
             $(this).toggleClass('artist-clicked');
@@ -48,19 +65,27 @@ var init = {
             if($(this).hasClass("artist-clicked")){
                 $('#biggie').css({'left':'0px','transition':'all ease 1s','width':'30%'}); 
             }
-            else if($('.artist').not( ".artist-clicked" )){
-                $('.artist').addClass('artist-not-clicked');
-                console.log("PLIIIIIZE");
-            }
             else{
-                $('.artist').removeClass('artist-clicked');
+                $('#biggie').css({'left':'0px','transition':'all ease 1s','width':'100%'}); 
             }
+//            else if($('.artist').not( ".artist-clicked" )){
+//                $('.artist').addClass('artist-not-clicked');
+//                console.log("PLIIIIIZE");
+//            }
+//            else{
+//                $('.artist').removeClass('artist-clicked');
+//            }
                 
 
         });
         
-        $('link[rel=stylesheet]+link[rel=stylesheet]').remove();
+        $('#uppernavitems img,#uppernavitems [type=text]').css({'opacity':'1','transition':'all ease 1s'}); 
         $('main').fadeIn(600);
+    },
+    
+    artistprofile : function(){
+        
+        $('.artist_profile').fadeIn(600);
     },
     
     themes : function(){
