@@ -31,6 +31,24 @@ $(function(){
     
      //$("#burger:not(.rotated)").
     
+    // PLAYER UP AND DOWN 
+    
+    $('#musicplayerbtn').click(function(){
+        $('#musicplayerbtn').toggleClass('clicked');
+        if($('#musicplayerbtn').hasClass('clicked')){
+            $('#musicplayercontainer').css({'bottom':'0px','transition':'all ease 1s','opacity':'1'});  
+            $('#musicplayerbtn').css({'background-image':'url(../assets/img/musicplayerbtn_up.svg)','transiton':'all ease 1s'});
+            
+            
+        }
+       else{
+           $('#musicplayercontainer').css({'bottom':'-250px','transition':'all ease 1s','opacity':'1'}); 
+           $('#musicplayerbtn').css({'background-image':'url(../assets/img/musicplayerbtn_down.svg)','transiton':'all ease 1s'});
+        }
+        
+    });
+    
+    
     
     /** ARTISTS PAGE **/
     
@@ -41,6 +59,8 @@ $(function(){
 
 
 var init = {
+    
+    
     index : function(){
         $('#biglogo').css({'top':'30%','transition':'all ease 1s','opacity':'1'});
         $('#pitch p').css({'left':'0','transition':'all ease 1s','opacity':'1'});
@@ -90,7 +110,19 @@ var init = {
     
     themes : function(){
         
-    }
+    },
+    
+    clickartist : function(){
+        
+    // ISSUE AT THE RELOAD OF INDEX - CLASS CLICKS DONT WORK ANYMORE - FIX THAT ISH !  ! IMPORTANT 
+        
+      $('.artists').on('click', function () {       
+        $('main').fadeOut(600, function () {
+            $('main').load('../../tpl/artists_load.html', init.artist)
+        });
+    });
+        
+    },
     
 }
 

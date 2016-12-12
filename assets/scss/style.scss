@@ -323,6 +323,43 @@ a {
 
 /** END PLAYLIST **/
 
+
+/** PLAYER **/
+
+#musicplayercontainer{
+    position: absolute;
+    width:100%;
+    height:250px;
+    bottom:-250px;
+    
+    #musicplayerbtn{
+        position: absolute;
+        background-color:white;
+        top:-24px;
+        left:50%;
+        margin-left:-50px;
+        height:25px;
+        width:100px;
+        cursor:pointer;
+        z-index: 400;
+        box-sizing: border-box;
+        border:1px solid $main-color;
+        border-top-left-radius:25px;
+        border-top-right-radius:25px;
+        background-image:url(../img/musicplayerbtn_down.svg);
+    }
+    #musicplayer{
+        position: absolute;
+        bottom:0;
+        height:250px;
+        width:100%;
+        background-color:white;
+        box-sizing:border-box;
+        border-top:1px solid $main-color;
+    }
+}
+/** END PLAYER **/
+
 body {
     overflow-x: hidden;
 }
