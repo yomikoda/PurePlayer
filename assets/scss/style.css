@@ -222,22 +222,8 @@ a {
 
 /** BURGERMENU **/
 #burger {
-  position: relative; }
-
-#burgermenu {
-  height: 85px;
-  width: 1280px;
-  position: absolute;
-  right: -700px;
-  transition: all ease 1s;
-  opacity: 0;
-  background-color: white;
-  border-bottom: 2px solid #FF6B6E;
-  z-index: 250; }
-  #burgermenu ul {
-    list-style: none;
-    height: 85px;
-    width: 560px;
+    height: 20px;
+    width: 20px;
     float: right;
     margin-right: 125px; }
     #burgermenu ul li {

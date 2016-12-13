@@ -1,4 +1,5 @@
 @charset "UTF-8";
+<<<<<<< HEAD
 /**RESET CSS **/
 html,
 body,
@@ -81,6 +82,21 @@ time,
 mark,
 audio,
 video {
+=======
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+>>>>>>> player
   margin: 0;
   padding: 0;
   border: 0;
@@ -89,6 +105,7 @@ video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
+<<<<<<< HEAD
 article,
 aside,
 details,
@@ -100,10 +117,15 @@ hgroup,
 menu,
 nav,
 section {
+=======
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+>>>>>>> player
   display: block; }
 
 body {
   line-height: 1; }
+<<<<<<< HEAD
 
 ol,
 ul {
@@ -124,6 +146,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+=======
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+>>>>>>> player
 /**FONTS**/
 @font-face {
   font-family: "FuturaStd-Light";
@@ -131,13 +171,17 @@ table {
   src: local("☺"), url("../fonts/FuturaStd-Light.woff") format("woff"), url("../fonts/FuturaStd-Light.TTF") format("truetype"), url("../fonts/FuturaStd-Light.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
+<<<<<<< HEAD
 /** VARS **/
+=======
+>>>>>>> player
 /** BASIC **/
 .center {
   margin: 0 auto; }
 
 main {
   width: 1280px;
+<<<<<<< HEAD
   height: 690px;
   background-color: white;
   position: relative; }
@@ -146,11 +190,16 @@ main {
   width: 1280px;
   position: relative;
   overflow-x: hidden; }
+=======
+  height: 800px;
+  background-color: lightgrey; }
+>>>>>>> player
 
 a {
   text-decoration: none;
   display: block;
   color: black; }
+<<<<<<< HEAD
 
 /** SEARCH BAR **/
 #uppernavitems #logo_nav {
@@ -220,10 +269,72 @@ a {
       #uppernav #uppernavitems #burger .line:last-child {
         margin-bottom: 0; }
 
+=======
+
+/** SEARCH BAR **/
+input[type=text] {
+  width: 325px;
+  height: 30px;
+  border: 1px solid red;
+  transition: all ease 1s;
+  border-radius: 30px; }
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 625px;
+  transition: all ease 1s;
+  border: 1px solid red; }
+
+/** BURGER **/
+#uppernav {
+  width: 100%;
+  height: 85px; }
+
+#uppernavitems {
+  width: 1280px;
+  height: 85px;
+  position: relative; }
+
+#burger {
+  height: 20px;
+  width: 20px;
+  float: right;
+  margin: 30px 105px 0 0;
+  cursor: pointer;
+  z-index: 300;
+  transition: all ease 1s;
+  background-color: white; }
+
+/**
+#burger:hover {
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -ms-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    100% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+NOT ESSENTIAL
+**/
+>>>>>>> player
 .rotated {
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg); }
+<<<<<<< HEAD
 
 /** BURGERMENU **/
 #burger {
@@ -611,5 +722,54 @@ main .artist-not-clicked {
 
 body {
   overflow-y: hidden; }
+=======
+
+.line {
+  height: 4px;
+  width: 20px;
+  background-color: red;
+  margin-bottom: 4px; }
+
+.line:last-child {
+  margin-bottom: 0; }
+
+/** BURGERMENU **/
+#burgermenu {
+  height: 85px;
+  width: 560px;
+  position: absolute;
+  right: -700px;
+  transition: all ease 1s;
+  opacity: 0; }
+
+#burgermenu > nav > ul {
+  list-style: none;
+  height: 85px;
+  width: 560px;
+  float: right;
+  margin-right: 50px; }
+
+#burgermenu > nav > ul > li {
+  display: block;
+  float: left;
+  height: 85px;
+  width: 90px;
+  margin-right: 50px; }
+
+#burgermenu > nav > ul > li > a {
+  height: 85px;
+  line-height: 85px;
+  width: 90px;
+  font-family: FuturaStd-Light;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: black;
+  transition: all ease 0.5s; }
+
+#burgermenu > nav > ul > li > a:hover {
+  color: red;
+  transition: all ease 0.5s; }
+>>>>>>> player
 
 /*# sourceMappingURL=style.css.map */
