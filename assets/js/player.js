@@ -1,4 +1,3 @@
-    
 /** AUDIO PLAYER ERWAN **/
 
 
@@ -49,5 +48,3 @@ var player = {
 
         currTimeDiv.text(formatSecondsAsTime(currTime));
     }
-
-
