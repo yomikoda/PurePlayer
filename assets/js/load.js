@@ -12,7 +12,7 @@ $('.artists').on('click', function () {
 
 $('.themes').click(function(){
     $('main').fadeOut(600, function () {
-        $('main').load('../../tpl/themes_load.html', init.artist)
+        $('main').load('../../tpl/themes_load.html', init.themes)
     });
 });
 

@@ -53,6 +53,8 @@ $(function(){
     /** ARTISTS PAGE **/
     
  
+    
+    
 });
 
 
@@ -110,6 +112,14 @@ var init = {
     
     themes : function(){
         
+        $('.theme').click(function(){
+            $(this).toggleClass('clicked');
+            $(this).siblings(".theme").toggleClass("notselected");
+            console.log("hi");
+        });
+        
+         $('#uppernavitems img,#uppernavitems [type=text]').css({'opacity':'1','transition':'all ease 1s'}); 
+        $('main').fadeIn(600);
     },
     
     clickartist : function(){
