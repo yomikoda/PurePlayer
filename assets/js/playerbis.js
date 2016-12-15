@@ -8,13 +8,25 @@ $(function(){
     player.audio.addEventListener('timeupdate', player.update)
 
     $(".playpause").click(function(){
-      $(".play").fadeOut("slow");
-        console.log("up");
 
+      if(player.audio.paused){
       $(".pause").fadeOut("slow");
-        console.log("disparition")
-      $(".pause").fadeIn("slow");
-        console.log("upup")
+          console.log("up");
+      $(".play").fadeOut("slow");
+          console.log("disparition")
+      $(".play").fadeIn("slow");
+          console.log("upup")
+
+      } else {
+        $(".play").fadeOut("slow");
+                console.log("up");
+        $(".pause").fadeOut("slow");
+                console.log("disparition")
+        $(".pause").fadeIn("slow");
+                console.log("upup")
+      }
+      
+
 
     });
 });
