@@ -64,6 +64,7 @@ var init = {
     
    
     index : function(){
+        init.clickindex;
         $('#biglogo').css({'top':'30%','transition':'all ease 1s','opacity':'1'});
         $('#pitch p').css({'left':'0','transition':'all ease 1s','opacity':'1'});
      
@@ -77,6 +78,8 @@ var init = {
         });
         $('#uppernavitems img,#uppernavitems [type=text]').css({'opacity':'1','transition':'all ease 1s'}); 
         $('main').fadeIn(600);
+        
+        
         
     },
     
@@ -134,48 +137,47 @@ var init = {
         
     },
     
-     clickindex : function(){
-            $('.artists').on('click', function () {       
-        $('main').fadeOut(600, function () {
-            $('main').load('../../tpl/load/artists_load.html', init.artist)
-        });
-    });
-
-
-    $('.themes').click(function(){
-        $('main').fadeOut(600, function () {
-            $('main').load('../../tpl/load/themes_load.html', init.themes)
-        });
-    });
-
-    $('.genre').click(function(){
-        $('main').fadeOut(600, function () {
-            $('main').load('../../tpl/load/genre_load.html', init.artist)
-        });
-    });
-
-    $('.playlists').click(function(){
-        $('main').fadeOut(600, function () {
-            $('main').load('../../tpl/load/playlists_load.html', init.artist)
-        });
-    });
-
-
-    $('#logo_nav').click(function(){
-        $('main').fadeOut(600, function () {
-            $('main').load('../../tpl/load/mainindex_load.html', init.index)
-        });
-    });
-
-    // ARTIST PAGE LOADS
-
-    $('.artist').on('click', function () {       
-        $('.artist_profile').fadeOut(600, function () {
-            $('.artist_profile').load('../../tpl/load/artistprofile.html', init.artistprofile)
-        });
-});
-
+    clickindex : function(){
         
+        $('.artists').on('click', function () {       
+                $('main').fadeOut(600, function () {
+                    $('main').load('../../tpl/load/artists_load.html', init.artist)
+                });
+            });
+
+
+            $('.themes').click(function(){
+                $('main').fadeOut(600, function () {
+                    $('main').load('../../tpl/load/themes_load.html', init.themes)
+                });
+            });
+
+            $('.genre').click(function(){
+                $('main').fadeOut(600, function () {
+                    $('main').load('../../tpl/load/genre_load.html', init.artist)
+                });
+            });
+
+            $('.playlists').click(function(){
+                $('main').fadeOut(600, function () {
+                    $('main').load('../../tpl/load/playlists_load.html', init.artist)
+                });
+            });
+
+
+            $('#logo_nav').click(function(){
+                $('main').fadeOut(600, function () {
+                    $('main').load('../../tpl/load/mainindex_load.html', init.index)
+                });
+            });
+
+            // ARTIST PAGE LOADS
+
+            $('.artist').on('click', function () {       
+                $('.artist_profile').fadeOut(600, function () {
+                    $('.artist_profile').load('../../tpl/load/artistprofile.html', init.artistprofile)
+                });
+            });
     }
     
 }
