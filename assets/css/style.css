@@ -497,9 +497,15 @@ main {
     #choices .section:hover h3 {
       color: #FF6B6E;
       letter-spacing: 5px; }
-  #choices #artistbg, #choices #themesbg, #choices #genrebg, #choices #playlist {
+  #choices #artistbg,
+  #choices #themesbg,
+  #choices #genrebg,
+  #choices #playlist {
     transition: all ease 1s; }
-  #choices #artistbg:hover, #choices #themesbg:hover, #choices #genrebg:hover, #choices #playlist:hover {
+  #choices #artistbg:hover,
+  #choices #themesbg:hover,
+  #choices #genrebg:hover,
+  #choices #playlist:hover {
     transition: all ease 1s; }
   #choices #artistsbg {
     background-image: url(../img/artists.svg);
@@ -528,26 +534,30 @@ main .artist {
   position: relative;
   cursor: pointer;
   display: visible;
-  background-color: purple;
   transition: all ease 1s; }
-  main .artist h3 {
-    font-family: FuturaStd-Light;
-    font-size: 18px;
-    letter-spacing: 5px;
-    text-align: center;
-    margin-top: 10px;
-    position: absolute;
-    bottom: 30px;
-    transition: all ease 1s; }
   main .artist #biggie {
-    position: absolute;
-    margin-top: 5%;
-    height: 80%;
-    width: 100%;
     background-image: url(../img/biggie.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all ease 1s; }
+  main .artist .artist_img {
+    height: 80%;
+    width: 100%; }
+    main .artist .artist_img h3 {
+      font-family: FuturaStd-Light;
+      font-size: 15px;
+      letter-spacing: 5px;
+      text-align: center;
+      margin-top: 10px;
+      position: absolute;
+      bottom: 30px;
+      transition: all ease 1s; }
+  main .artist .artist_content {
+    width: 0%;
+    height: 100%; }
+  main .artist .artist_content, main .artist .artist_img {
+    float: left;
     transition: all ease 1s; }
   main .artist .artist_profile {
     float: right;
@@ -565,10 +575,18 @@ main .artist-clicked {
   height: 100%;
   width: 100%;
   transition: all ease 1s; }
+  main .artist-clicked .artist_img {
+    width: 20%;
+    height: 100%; }
+  main .artist-clicked .artist_content {
+    width: 80%;
+    height: 100%;
+    background-color: purple; }
+  main .artist-clicked .artist_content, main .artist-clicked .artist_img {
+    transition: all ease 1s; }
 main .artist-not-clicked {
-  height: 1px;
-  width: 1px;
-  background-color: blue;
+  display: none;
+  opacity: 0;
   transition: all ease 1s; }
 
 /** THEME PAGE **/
@@ -588,10 +606,47 @@ main .artist-not-clicked {
     width: 0%;
     height: 100%;
     background-color: purple; }
-  .theme .theme_img, .theme .theme_content {
+  .theme .theme_img,
+  .theme .theme_content {
     float: left; }
   .theme .notselected {
     display: none; }
+
+/** GENRE PAGE **/
+.genre {
+  width: 25%;
+  height: 50%;
+  float: left;
+  transition: all ease 1s; }
+  .genre .genre_img {
+    width: 100%;
+    height: 100%;
+    background-color: red; }
+  .genre .genre_content {
+    width: 0;
+    height: 100%;
+    background-color: purple; }
+  .genre .genre_img, .genre .genre_content {
+    float: left;
+    transition: all ease 1s; }
+
+/** PLAYLIST PAGE **/
+.playlist {
+  width: 25%;
+  height: 50%;
+  float: left;
+  transition: all ease 1s; }
+  .playlist .playlist_img {
+    width: 100%;
+    height: 100%;
+    background-color: red; }
+  .playlist .playlist_content {
+    width: 0;
+    height: 100%;
+    background-color: purple; }
+  .playlist .playlist_img, .playlist .playlist_content {
+    float: left;
+    transition: all ease 1s; }
 
 /** CLICKED AND NOT SELECTED ELEMENTS **/
 .clicked {
@@ -603,6 +658,18 @@ main .artist-not-clicked {
     height: 100%;
     width: 20%; }
   .clicked .theme_content {
+    width: 80%;
+    height: 100%; }
+  .clicked .genre_img {
+    height: 100%;
+    width: 20%; }
+  .clicked .genre_content {
+    width: 80%;
+    height: 100%; }
+  .clicked .playlist_img {
+    height: 100%;
+    width: 20%; }
+  .clicked .playlist_content {
     width: 80%;
     height: 100%; }
 

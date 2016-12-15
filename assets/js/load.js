@@ -20,28 +20,21 @@ $('.themes').click(function(){
 
 $('.genre').click(function(){
     $('main').fadeOut(600, function () {
-        $('main').load('../../tpl/load/genre_load.html', init.artist)
+        $('main').load('../../tpl/load/genre_load.html', init.genres)
     });
 });
 
 $('.playlists').click(function(){
     $('main').fadeOut(600, function () {
-        $('main').load('../../tpl/load/playlists_load.html', init.artist)
+        $('main').load('../../tpl/load/playlists_load.html', init.playlists)
     });
 });
 
 
 $('#logo_nav').click(function(){
     $('main').fadeOut(600, function () {
+       
         $('main').load('../../tpl/load/mainindex_load.html', init.index)
-    });
-});
-
-// ARTIST PAGE LOADS
-
-$('.artist').on('click', function () {       
-    $('.artist_profile').fadeOut(600, function () {
-        $('.artist_profile').load('../../tpl/load/artistprofile.html', init.artistprofile)
     });
 });
 

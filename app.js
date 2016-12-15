@@ -1,9 +1,9 @@
 var express = require('express'), app = express(), http = require('http').Server(app);
 
-app.use('/js', express.static('assets/js'));
 app.use('/css', express.static('assets/css'));
-app.use('/img', express.static('assets/img'));
 app.use('/fonts', express.static('assets/fonts'));
+app.use('/img', express.static('assets/img'));
+app.use('/js', express.static('assets/js'));
 
 app.get('/test', function(req, res){
   res.send('<h1>Hello TEST</h1>');

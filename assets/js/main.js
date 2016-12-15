@@ -62,9 +62,21 @@ $(function(){
 
 var init = {
     
+ 
+    
    
     index : function(){
-        init.clickindex;
+        
+        init.animindex();
+       
+        $('main').fadeIn(600);
+        
+        init.clickindex();   
+        
+    },
+    
+
+    animindex : function(){
         $('#biglogo').css({'top':'30%','transition':'all ease 1s','opacity':'1'});
         $('#pitch p').css({'left':'0','transition':'all ease 1s','opacity':'1'});
      
@@ -77,40 +89,33 @@ var init = {
                 });     
         });
         $('#uppernavitems img,#uppernavitems [type=text]').css({'opacity':'1','transition':'all ease 1s'}); 
-        $('main').fadeIn(600);
-        
-        
-        
     },
     
     artist : function(){
-        $('.artist').click(function(){
+         $('.artist').click(function(){
             $(this).toggleClass('artist-clicked');
-            
-            if($(this).hasClass("artist-clicked")){
-                $('#biggie').css({'left':'0px','transition':'all ease 1s','width':'30%'}); 
-            }
-            else{
-                $('#biggie').css({'left':'0px','transition':'all ease 1s','width':'100%'}); 
-            }
-//            else if($('.artist').not( ".artist-clicked" )){
-//                $('.artist').addClass('artist-not-clicked');
-//                console.log("PLIIIIIZE");
-//            }
-//            else{
-//                $('.artist').removeClass('artist-clicked');
-//            }
-                
-
+            $(this).siblings(".artist").toggleClass("artist-not-clicked");      
+             console.log("HEY");
         });
-        
-        $('#uppernavitems img,#uppernavitems [type=text]').css({'opacity':'1','transition':'all ease 1s'}); 
+
+
+        $('#uppernavitems img,#uppernavitems [type=text]').css({'opacity':'1','transition':'all ease 1s'});
+        init.artistprofile(); 
         $('main').fadeIn(600);
     },
     
+    
     artistprofile : function(){
         
-        $('.artist_profile').fadeIn(600);
+        $('.artist').click(function(){  
+            console.log("YO");
+            $('.artist_content').fadeOut(600, function () {                     
+                $('.artist_content').load('../../tpl/load/artistprofile.html');
+            });
+            $('.artist_content').fadeIn(600);
+            console.log("AM I WORKING YET MA ?");
+        });
+
     },
     
     themes : function(){
@@ -118,13 +123,27 @@ var init = {
         $('.theme').click(function(){
             $(this).toggleClass('clicked');
             $(this).siblings(".theme").toggleClass("notselected");
-            console.log("hi");
         });
         
          $('#uppernavitems img,#uppernavitems [type=text]').css({'opacity':'1','transition':'all ease 1s'}); 
         $('main').fadeIn(600);
     },
-    
+    genres : function(){
+         $('.genre').click(function(){
+            $(this).toggleClass('clicked');
+            $(this).siblings(".genre").toggleClass("notselected");
+        });
+         $('#uppernavitems img,#uppernavitems [type=text]').css({'opacity':'1','transition':'all ease 1s'}); 
+        $('main').fadeIn(600);
+    },
+    playlists : function(){
+         $('.playlist').click(function(){
+            $(this).toggleClass('clicked');
+            $(this).siblings(".playlist").toggleClass("notselected");
+        });
+         $('#uppernavitems img,#uppernavitems [type=text]').css({'opacity':'1','transition':'all ease 1s'}); 
+        $('main').fadeIn(600);
+    },
     clickartist : function(){
         
     // ISSUE AT THE RELOAD OF INDEX - CLASS CLICKS DONT WORK ANYMORE - FIX THAT ISH !  ! IMPORTANT 
@@ -136,7 +155,6 @@ var init = {
     });
         
     },
-    
     clickindex : function(){
         
         $('.artists').on('click', function () {       
@@ -179,7 +197,6 @@ var init = {
                 });
             });
     }
-    
 }
 
     
