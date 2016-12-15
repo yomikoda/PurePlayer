@@ -7,33 +7,33 @@
     <meta name="description" content="PurePlayer - A Pure way to listen to music everywhere">
     <link rel="icon" type="image/png" href="../assets/img/favicon.png">
     <link rel="stylesheet" href="../assets/css/style.css">
-    
+    <link rel="stylesheet" type="text/css" href="../assets/css/styleplayer.css">
 
 </head>
 
 <body>
-   
-        <div id="playlist">
-            <div id="btnplaylist">
-                <div id="btnplaylisticon"></div>
-            </div>
-            <div id="playlistcontent">
-                <h2>PLAYLIST</h2>
-                <div id="h2bg"></div>
-                <div id="tracklist">
-                    <h3>Track Title</h3>
-                    <ul id="tracks">
-                        <li>
-                            <div class="trackimg"></div>
-                            <div class="trackname">
-                                <p class="artistname">BLAdibla</p>
-                                <p class="songtitle">fslslgjdsljgkdsgl</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+
+    <div id="playlist">
+        <div id="btnplaylist">
+            <div id="btnplaylisticon"></div>
+        </div>
+        <div id="playlistcontent">
+            <h2>PLAYLIST</h2>
+            <div id="h2bg"></div>
+            <div id="tracklist">
+                <h3>Track Title</h3>
+                <ul id="tracks">
+                    <li>
+                        <div class="trackimg"></div>
+                        <div class="trackname">
+                            <p class="artistname">BLAdibla</p>
+                            <p class="songtitle">fslslgjdsljgkdsgl</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
     <div id="page" class="center">
         <div id="uppernav">
             <div id="uppernavitems" class="center">
@@ -81,16 +81,49 @@
 
         </main>
         
+        
+    </div>
+     <div id="musicplayercontainer">
+            <div id="musicplayerbtn"></div>
+            <div id="musicplayer">
+                
+              <div class="player">
+        <div class="song">
+            <div class="artist">Kavinsky</div>
+            <div class="name">Odd Look ft. The Weeknd</div>
+        </div>
+        <div class="playarea">
+            <div class="prevSong"></div>
+            <div class="play"></div>
+            <div class="pause"></div>
+            <div class="nextSong"></div>
+
+            <div class="soundControl"></div>
+        </div>
+        
+</div>
+
+<div id="traker">
+    <audio controls id="audio">
+      <source src="../assets/childish/01%20Me_and_Your_Mama.m4a" type="audio/mp4">
+    </audio>
+
+    <div class="traker1"></div>
+    <div class="traker2"></div>
+    <div class="cashtraker"></div>
+    <div class="time">00:00</div>
+
+</div>  
+                
+                
+            </div>
+        </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script src="../assets/js/jquery-2.1.4.min.js"></script>
         <script src="../assets/js/main.js"></script>
         <script src="../assets/js/start.js"></script> 
         <script src="../assets/js/load.js"></script>
-    </div>
-     <div id="musicplayercontainer">
-            <div id="musicplayerbtn"></div>
-            <div id="musicplayer"></div>
-        </div>
+        <script src="../assets/js/player.js"></script>
 </body>
 
 </html>

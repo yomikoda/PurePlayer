@@ -1,40 +1,39 @@
 * {
     margin: 0;
     padding: 0;
-  -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 canvas {
     display: block;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
 body {
     background-color: white;
-
-        .player {
-            left: 50%;
-            top: 30%;
-            width: 740px;
-            transform: translateX(-50%) translateY(-50%);
-            display: block;
-            position: absolute;
-            z-index: 10;
-            height: 120px;
-        }
+    .player {
+        left: 50%;
+        top: 30%;
+        width: 740px;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        position: absolute;
+        z-index: 10;
+        height: 120px;
+    }
 }
 
-
 .player .playarea {
-    position: absolute;    
+    position: absolute;
     top: 90px;
     left: 55%;
     height: 126px;
@@ -48,7 +47,7 @@ body {
 }
 
 .player .playarea .play {
-cursor: pointer;
+    cursor: pointer;
     opacity: 0.85;
     vertical-align: middle;
     width: 115px;
@@ -144,45 +143,41 @@ cursor: pointer;
     z-index: 10;
 }
 
-#traker{
+#traker {
     position: relative;
     width: 100%;
     height: 100%;
     bottom: 30%;
-
-        .traker1{
-            position: absolute;
-            background-color: #FF6B6E;
-            width: 100%;
-            height: 277px;
-            bottom: 0;
-            border-bottom-left-radius:60%;
-            border-bottom-right-radius:60%;
-        }    
-        .traker2{
-            position: absolute;
-            background-color: white;
-            width: 100%;
-            height: 280px;
-            bottom: 28px;
-            right: 0px;
-            left: 0px;
-            border-bottom-left-radius: 60%;
-            border-bottom-right-radius: 60%;
-            z-index:1;
-        }
-        .cashtraker{
-            z-index: 2;
-            position: absolute;
-            right: 0;
-            height: 276px;
-            width: 53%;
-            border: red;
-            bottom: 0;
-            background: white;
-            -webkit-transition: width .5s ease-in-out;
-        }
+    .traker1 {
+        position: absolute;
+        background-color: #FF6B6E;
+        width: 100%;
+        height: 277px;
+        bottom: 0;
+        border-bottom-left-radius: 60%;
+        border-bottom-right-radius: 60%;
+    }
+    .traker2 {
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        height: 280px;
+        bottom: 28px;
+        right: 0px;
+        left: 0px;
+        border-bottom-left-radius: 60%;
+        border-bottom-right-radius: 60%;
+        z-index: 1;
+    }
+    .cashtraker {
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        height: 276px;
+        width: 53%;
+        border: red;
+        bottom: 0;
+        background: white;
+        -webkit-transition: width .5s ease-in-out;
+    }
 }
-
-
-
