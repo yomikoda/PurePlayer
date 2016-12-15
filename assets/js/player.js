@@ -6,7 +6,7 @@ player.audio = document.getElementById('audio');
     $('.play').click(player.play);
     $('.pause').click(player.stop);
     player.audio.addEventListener('timeupdate', player.update)
-});
+
 
 function formatSecondsAsTime(secs, format) {
   var hr  = Math.floor(secs / 3600);
@@ -24,7 +24,7 @@ function formatSecondsAsTime(secs, format) {
 }
 
 var player = {
-    audio : null,
+    audio : null,   
 
     play : function(){
         player.audio.play();
@@ -48,3 +48,4 @@ var player = {
 
         currTimeDiv.text(formatSecondsAsTime(currTime));
     }
+ }
