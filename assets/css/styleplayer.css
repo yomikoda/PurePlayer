@@ -39,26 +39,31 @@ body {
 .player .playarea div {
   display: inline-block; }
 
-.player .playarea .play {
+.player .playarea .playpause {
   cursor: pointer;
   opacity: 0.85;
   vertical-align: middle;
   width: 115px;
   height: 110px;
-  background: url(../img/player/playerbtns_05.png) 40px 35px no-repeat; }
+  overflow: hidden; }
 
-.player .playarea .pause {
-  display: none;
+.pause {
   cursor: pointer;
   opacity: 0.85;
-  vertical-align: middle;
-  margin: 0 26px;
-  border: 3px solid #FE4365;
-  border-radius: 120px;
-  width: 120px;
-  height: 120px;
-  background: url(../img/player/playerbtns_05.png) 43px 35px no-repeat;
-  background-size: 35px 51px; }
+  height: 115px;
+  width: 110px;
+  position: relative;
+  left: -47px;
+  top: -33px;
+  background: url(../img/player/pause.png) 40px 35px no-repeat; }
+
+.play {
+  cursor: pointer;
+  opacity: 0.85;
+  height: 115px;
+  width: 110px;
+  background: url(../img/player/playerbtns_05.png) 40px 35px no-repeat;
+  z-index: 5; }
 
 .player .playarea .prevSong {
   cursor: pointer;

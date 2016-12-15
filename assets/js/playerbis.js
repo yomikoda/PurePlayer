@@ -4,9 +4,21 @@ $(function(){
     player.audio = document.getElementById('audio');    
     
     $('.play').click(player.play);
-    $('.pause').click(player.stop);
+    $('.pause').click(player.pause);
     player.audio.addEventListener('timeupdate', player.update)
+
+    $(".playpause").click(function(){
+      $(".play").fadeOut("slow");
+        console.log("up");
+
+      $(".pause").fadeOut("slow");
+        console.log("disparition")
+      $(".pause").fadeIn("slow");
+        console.log("upup")
+
+    });
 });
+
 
 function formatSecondsAsTime(secs, format) {
   var hr  = Math.floor(secs / 3600);
@@ -30,8 +42,8 @@ var player = {
         player.audio.play();
     },
 
-    stop : function(){
-        player.audio.stop();
+    pause : function(){
+        player.audio.pause();
     },
 
     update : function(track){
@@ -48,5 +60,7 @@ var player = {
 
         currTimeDiv.text(formatSecondsAsTime(currTime));
     }
-
 }
+
+
+

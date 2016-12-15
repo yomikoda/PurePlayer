@@ -1,13 +1,5 @@
 /** AUDIO PLAYER ERWAN **/
 
-
-player.audio = document.getElementById('audio');    
-    
-    $('.play').click(player.play);
-    $('.pause').click(player.stop);
-    player.audio.addEventListener('timeupdate', player.update)
-
-
 function formatSecondsAsTime(secs, format) {
   var hr  = Math.floor(secs / 3600);
   var min = Math.floor((secs - (hr * 3600))/60);
@@ -49,3 +41,15 @@ var player = {
         currTimeDiv.text(formatSecondsAsTime(currTime));
     }
  }
+
+ player.audio = document.getElementById('audio');    
+    
+    $('.play').click(player.play);
+    $('.pause').click(player.stop);
+    player.audio.addEventListener('timeupdate', player.update)
+
+
+
+
+
+    
