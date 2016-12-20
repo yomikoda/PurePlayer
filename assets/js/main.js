@@ -110,7 +110,7 @@ var init = {
         $('.artist').click(function(){  
             console.log("YO");
             $('.artist_content').fadeOut(600, function () {                     
-                $('.artist_content').load('../../tpl/load/artistprofile.html');
+                $('.artist_content').load('../../tpl/load/artists_profile.html');
             });
             $('.artist_content').fadeIn(600);
             console.log("AM I WORKING YET MA ?");

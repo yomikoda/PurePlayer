@@ -571,7 +571,6 @@ main .artist:hover #biggie {
   background-image: url(../img/biggie_neg.svg);
   transition: all ease 1s; }
 main .artist-clicked {
-  background-color: red;
   height: 100%;
   width: 100%;
   transition: all ease 1s; }
