@@ -556,6 +556,8 @@ main .artist {
   main .artist .artist_content {
     width: 0%;
     height: 100%; }
+    main .artist .artist_content p {
+      opacity: 0; }
   main .artist .artist_content, main .artist .artist_img {
     float: left;
     transition: all ease 1s; }
@@ -579,14 +581,17 @@ main .artist-clicked {
     height: 100%; }
   main .artist-clicked .artist_content {
     width: 80%;
-    height: 100%;
-    background-color: purple; }
+    height: 100%; }
+    main .artist-clicked .artist_content p {
+      opacity: 1; }
   main .artist-clicked .artist_content, main .artist-clicked .artist_img {
     transition: all ease 1s; }
 main .artist-not-clicked {
   display: none;
   opacity: 0;
   transition: all ease 1s; }
+  main .artist-not-clicked p {
+    opacity: 0; }
 
 /** THEME PAGE **/
 .theme {
