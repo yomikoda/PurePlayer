@@ -37,13 +37,13 @@ $(function(){
         $('#musicplayerbtn').toggleClass('clicked');
         if($('#musicplayerbtn').hasClass('clicked')){
             $('#musicplayercontainer').css({'bottom':'0px','transition':'all ease 1s','opacity':'1'});  
-            $('#musicplayerbtn').css({'background-image':'url(../assets/img/musicplayerbtn_up.svg)','transiton':'all ease 1s'});
+            $('#musicplayerbtn').css({'background-image':'url(../img/musicplayerbtn_up.svg)','transiton':'all ease 1s'});
             
             
         }
        else{
            $('#musicplayercontainer').css({'bottom':'-250px','transition':'all ease 1s','opacity':'1'}); 
-           $('#musicplayerbtn').css({'background-image':'url(../assets/img/musicplayerbtn_down.svg)','transiton':'all ease 1s'});
+           $('#musicplayerbtn').css({'background-image':'url(../img/musicplayerbtn_down.svg)','transiton':'all ease 1s'});
         }
         
     });
